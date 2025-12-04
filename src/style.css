@@ -1,5 +1,8 @@
+body {
+  font-family: "Sour Gummy", sans-serif;
+}
+
 h1 {
   color: blue;
-  font: 96px;
-  font-family: "Sour Gummy", sans-serif;
+  font-size: 96px;
 }
