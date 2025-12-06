@@ -17,7 +17,11 @@ body {
   grid-gap: 64px;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+.img-responsive-1 {
+  width: 175%;
   display: block;
 }
 .grid-2-columns {
@@ -29,9 +33,16 @@ body {
 .grid-3-columns-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 .card {
   background-color: white;
   margin-top: 30px 0px;
+}
+.card-header.grid {
+  grid-gap: 0;
 }
 .card-body {
   padding: 25px;
@@ -173,7 +184,7 @@ footer p a {
   font-weight: bold;
   opacity: 0.8;
 }
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -196,5 +207,11 @@ footer p a {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    width: 100%;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
