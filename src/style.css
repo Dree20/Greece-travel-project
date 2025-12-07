@@ -37,6 +37,11 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
 }
+.youtube-vids {
+  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
 .card {
   background-color: white;
   margin-top: 30px 0px;
@@ -213,5 +218,8 @@ footer p a {
   }
   .embed {
     aspect-ratio: 16/9;
+  }
+  .youtube-vids {
+    grid-template-columns: 1fr;
   }
 }
