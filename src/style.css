@@ -1,6 +1,12 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #4a90e2;
+  --third-color: #e6ebef;
+}
+
 body {
   font-family: "Sour Gummy", sans-serif;
-  background-color: #dfdfdf;
+  background-color: var(--third-color);
 }
 
 .container {
@@ -10,6 +16,7 @@ body {
 .text-center {
   text-align: center;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 .grid {
   display: grid;
@@ -41,9 +48,21 @@ body {
   margin: 0 auto;
   width: 100%;
   aspect-ratio: 16/9;
+  filter: brightness(100%) contrast(86%);
+}
+table {
+  margin-top: 5px;
+  border: 1px solid var(--third-color);
+}
+table th {
+  color: var(--secondary-color);
+}
+table td {
+  border-top: 1px solid var(--third-color);
+  text-align: center;
 }
 .card {
-  background-color: white;
+  background-color: var(--primary-color);
   margin-top: 30px 0px;
 }
 .card-header.grid {
@@ -51,21 +70,25 @@ body {
 }
 .card-body {
   padding: 25px;
+  text-align: center;
 }
 .card-footer {
   padding: 0 30px 30px;
 }
 .btn {
   display: block;
-  color: white;
+  color: var(--primary-color);
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px;
-  background-color: #4a90e2;
+  background-color: var(--secondary-color);
   text-decoration: none;
+}
+.vids {
+  padding-top: 60px;
 }
 section {
   max-width: 100%;
@@ -74,13 +97,14 @@ section {
 }
 section.secondary {
   background-color: #f0f0f9;
+  padding-top: 60px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/images/Greece-photo-1.jpg);
   background-size: cover;
   background-position: center;
-  color: white;
+  color: var(--primary-color);
   text-align: center;
   padding: 200px 0;
 }
@@ -103,50 +127,54 @@ header h3 {
   letter-spacing: 5px;
 }
 header a {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  color: blue;
+  color: var(--secondary-color);
   text-decoration: none;
-  letter-spacing: 3px;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: white;
+  background-color: var(--primary-color);
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
 }
 main {
-  background-color: white;
+  background-color: var(--primary-color);
 }
 
 main h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.5;
   margin: 0;
   opacity: 0.8;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--secondary-color);
 }
 main h3 {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 500;
   margin: 0;
   line-height: 1.5;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 main p {
   font-size: 16px;
   line-height: 1.5;
 }
 main h4 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1;
   margin: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 main h5 {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0;
   line-height: 1;
+  color: var(--secondary-color);
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -172,7 +200,7 @@ footer li {
   padding-left: 15px;
 }
 footer ul a {
-  color: white;
+  color: var(--primary-color);
   opacity: 0.8;
 }
 footer p {
@@ -185,7 +213,7 @@ footer p {
   padding: 10px;
 }
 footer p a {
-  color: white;
+  color: var(--primary-color);
   font-weight: bold;
   opacity: 0.8;
 }
@@ -194,7 +222,7 @@ footer p a {
     padding: 60px 0;
   }
   header h1 {
-    font-size: 48px;
+    font-size: 38px;
   }
   header h2 {
     font-size: 20px;
@@ -202,9 +230,24 @@ footer p a {
   header h3 {
     font-size: 19px;
   }
+  main h4 {
+    font-size: 18px;
+  }
   header a {
     font-size: 10px;
     padding: 8px 16px;
+  }
+  main h2 {
+    font-size: 15px;
+  }
+  main h3 {
+    font-size: 28px;
+  }
+  table {
+    font-size: 15px;
+  }
+  table th {
+    font-size: 15px;
   }
   .grid {
     grid-template-columns: 1fr;
