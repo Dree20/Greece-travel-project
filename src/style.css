@@ -97,7 +97,6 @@ section {
 }
 section.secondary {
   background-color: #f0f0f9;
-  padding-top: 60px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
